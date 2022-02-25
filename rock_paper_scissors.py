@@ -31,11 +31,19 @@ while True:
         user_wins += 1
     elif user_input == computer_pick:
         print('Draw!')
-        
+
     else:
         print('You lost!')
         computer_wins += 1
 
-print('You won', user_wins, 'times.')
-print('The computer won', computer_wins, 'times.')
+    if user_wins >= 1:
+        print('You won', user_wins, 'time')
+    else:
+        print('You won', user_wins, 'times.')
+
+    if computer_wins >= 1:
+        print('The computer won', computer_wins, 'time')
+    else:
+        print('The computer won', computer_wins, 'times')    
+
 print('Goodbye!')
